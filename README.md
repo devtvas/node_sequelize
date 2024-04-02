@@ -1,3 +1,5 @@
+[LINK REPOSITORIO](https://github.com/devtvas/node_sequelize)
+
 [CMD]
 mkdir nome-projeto
 cd projeto
