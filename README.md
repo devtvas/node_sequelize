@@ -1,4 +1,4 @@
-[LINK REPOSITORIO](https://github.com/devtvas/node_sequelize)
+Projeto passo a passo de como usar Sequelize + Migrations
 
 [CMD]
 mkdir nome-projeto
@@ -27,4 +27,19 @@ crie o arquivo .sequelizerc
 
 [CMD]
 
+//cria o banco de dados
 npx sequelize-cli db:create
+
+//criar a tabela no banco de dados
+npx sequelize-cli migration:generate --name create-clientes
+
+//subir as migracoes para o banco de dados!
+npx sequelize-cli db:migrate
+
+//fallback, voce errou e precisa desfazer...
+npx sequelize-cli db:migrate:undo
+
+[Links]
+
+[REPOSITORIO](https://github.com/devtvas/node_sequelize)
+[VIDEO-AULA](https://www.youtube.com/watch?v=QOKk1PzGLeI&t=1710s)
